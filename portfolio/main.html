@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/67df97de11.js" crossorigin="anonymous"></script>
+    <title>portfolio</title>
+    <style>
+
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-color:rgb(6, 6, 22);
+            color:white;
+        }
+        header{
+            position:sticky;
+            top:0px;
+        }
+        nav{
+           display:flex;
+           justify-content: space-around;
+           align-items: center;
+           height:90px;
+           background-color: rgb(39, 39, 119);
+         }
+         nav ul{
+            display:flex;
+            margin-left: 10px;
+            color:white;
+         }
+         nav ul li {
+            list-style-type:none;
+            margin:0px 20px;
+            font-size: 20px;        
+         }
+         nav ul li a{
+            text-decoration: none;
+            color:white;
+         }
+         nav ul li a:hover{
+            color: rgb(230, 127, 220);
+         }
+         .left{
+            font-size: 30px;
+         }
+         .main{
+            margin:160px 0;
+            display: flex;
+            justify-content: space-evenly;
+         }
+         .leftsec{
+            width:40%;
+            font-size: 50px;
+            align-self: center;
+         }
+         .rightsec{
+            width:40%;
+         }
+         #element{
+            color:rgb(179, 12, 12)
+         }
+         .image{
+            height: 400px;
+            width: 500px;
+            border-radius: 100px;  
+         }
+         .aboutdiv{
+            width:0%;
+         }
+         .sec2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+        .sub-sec-two{
+            display:flex;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+        }
+        .abtimg{
+            height:260px;
+            width:260px;
+            border-radius:360px;
+            align-self: center;
+            
+        }
+        .abttxt{
+            text-align:justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            width:50%;
+            text-align: justify;
+            align-self: center;
+            
+        }
+        .edu{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+        .sub-edu{
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .edu-txt{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        section ul li{
+            list-style-type:none;
+            margin:20px 30px;
+            color:white;
+           }
+           section ul{
+            display:flex;
+            margin-top:100px;
+            justify-content: center;
+            background-color: black;
+           }
+           .bars{
+            display:none;
+           }
+        @media screen and (max-width:600px) {
+            .left{
+                font-size: 20px;
+             }
+            .main{
+                margin:160px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+             }
+             .leftsec{
+                width:100%;
+                font-size: 50px;
+                padding-left:50px;
+                margin-bottom: 20px;
+             }
+             .rightsec{
+                width:50%;
+                display:flex;
+                justify-content: center;
+             }
+             .image{
+                height: 300px;
+                width: 300px;
+                border-radius:30px;
+             }
+             .sec2{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 30px;
+                text-decoration: underline;
+                padding-top: 30px;
+            }
+            .sub-sec-two{
+                display:flex;
+                justify-content:space-evenly;
+    
+            }
+            .abtimg{
+                height:260px;
+                width:260px;
+                border-radius:360px;
+                margin-bottom:40px;
+                
+            }
+            .abttxt{
+                text-align:justify;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 10px;
+                width:80%;
+                align-self: center;  
+            }
+            .edu{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 30px;
+                text-decoration: underline;
+            }
+            .sub-edu{
+                display:flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .edu-txt{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                text-align: center;
+                margin:20px 0;
+            }
+            h1{
+                margin:30px;
+            }
+            nav ul li a{
+                display:none;
+             }
+             .aboutdiv{
+                width:100%;
+             }
+             .bars{
+                display:contents;
+                padding-left:30px;
+               }
+        }
+        @media screen and (max-width:900px) and (min-width:601px) {
+            .left{
+                font-size:20px;
+                padding-left:20px;
+            }
+            nav{
+                display:flex;
+                width:960px;
+                justify-content: space-around;
+                align-items: center;
+                height:90px;
+                background-color: rgb(39, 39, 119);
+              }
+              .sec2{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 30px;
+                text-decoration: underline;
+                margin-left:18%;
+            }
+            .sub-sec-two{
+                display:flex;
+                justify-content:space-evenly;
+                flex-wrap: wrap;
+            }
+            .abtimg{
+                height:260px;
+                width:260px;
+                border-radius:360px;
+                margin-left:30%;
+                align-self: center;   
+            }
+            .abttxt{
+                text-align:justify;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                width:80%;
+                margin-left:20%;
+                text-align: justify;
+                align-self: center;
+                
+            }
+            .edu{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 30px;
+                text-decoration: underline;
+                margin-left:15%;
+            }
+            .sub-edu{
+                display:flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .edu-txt{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 25px;
+                text-align: center;
+                margin-left:10%;
+                margin-bottom:90px;
+            }
+            section ul{
+                display:flex;
+                margin-top:100px;
+                width:960px;
+                justify-content: center;
+                background-color: black;
+               }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">REDDY</div> 
+            <div class="right">
+                <ul>
+                    <li><a href="#home" onclick="document.getElementById('home').scrollIntoView()">Home</a></li>
+                    <li><a href="#about" onclick="document.getElementById('about').scrollIntoView()">About</a></li>
+                    <li><a href="#education" onclick="document.getElementById('education').scrollIntoView()">Education</a></li>
+                    <li><a href="#skills" onclick="document.getElementById('skills').scrollIntoView()">Skills</a></li>
+                    <li><a href="#contactus" onclick="document.getElementById('contact').scrollIntoView()">Contactus</a></li>
+                    <li class="bars"><i class="fa fa-bars" style="font-size:30px;"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main" >
+            <div class="leftsec" id="home">HEllO<br><span style="color:red">I AM</span><br>
+                <span id="element"></span>
+            </div>
+            <div class="rightsec">
+                <img src="main.png" class="image">
+            </div>
+        </section>
+    </main>
+   <section >
+    <div class="sec2" id="about">ABOUT</div>
+    <div class="sub-sec-two">
+        <div><img src="a.jpg" class="abtimg" ></div>
+        <div class="abttxt"><p>I am a passionate and dedicated engineering student with a strong skill set in Programming and Web development. My commitment to continuous learning and my ability to tackle challenging problems sets me apart as a hardworking individual. I am driven by the desire to excel in my field and to contribute to innovative solutions. My ultimate goal is to secure a position in a reputable MNC where I can further hone my skills, work on exciting projects, and collaborate with talented professionals.I am seeking an entry-level position in a dynamic and challenging workplace.</p></div>
+    </div>
+   </section>
+    <section style="height:80%;width:100%;margin-top:240px;padding:50px 0" id="education">
+        <div class="edu">EDUCATION</div>
+        <div class="sub-edu">
+            <div class="edu-txt">
+                <i class="fa-solid fa-school-flag" style="font-size:150px;padding-bottom:20px"></i>
+                <h1>10th SSC</h1>
+                2018<br>
+                Narayana E-Techno School
+            </div>
+            <div class="edu-txt">
+                <i class="fa-solid fa-building-columns" style="font-size:150px;padding-bottom:20px"></i>
+                <h1>INTERMEDIATE</h1>
+                2018-2020<br>
+                Narayana Junior College
+            </div>
+            <div class="edu-txt">
+                <i class="fa fa-graduation-cap" style="font-size:150px;padding-bottom:20px"></i>
+                <h1>BACHALORS</h1>
+                2020-2024<br>
+                Raghu Engineering College
+            </div>
+        </div>
+    </section>
+    <section style="height:50%;width:100%;padding:50px 0;margin-top:200px" id="skills">
+        <div class="edu">SKILLS</div>
+        <div class="sub-edu">
+            <div class="edu-txt">
+                <i class="fa-solid fa-code" style="font-size:150px;"></i>
+                <h1>PROGRAMMING</h1>
+                C Programming:<progress  max="100" value="70"></progress><br>
+                Java:&emsp;&emsp;&emsp;&emsp;&ensp;<progress  max="100" value="70"></progress><br>
+                Python:&emsp;&emsp;&emsp;&ensp;<progress  max="100" value="80"></progress><br>
+                SQL:&emsp;&emsp;&emsp;&emsp;&ensp;<progress  max="100" value="80"></progress>
+            </div>
+            <div class="edu-txt">
+                <i class="fa-regular fa-file-code"style="font-size:150px;"></i>
+                <h1>WEB-DEV</h1>
+                HTML:&emsp;&emsp;&emsp;<progress  max="100" value="90"></progress><br>
+                CSS:&emsp;&emsp;&emsp;&emsp;<progress  max="100" value="80"></progress><br>
+                JAVASCRIPT:<progress  max="100" value="70"></progress><br>
+                BOOTSTRAP:<progress  max="100" value="80"></progress>
+            </div>
+        </div>
+    </section>
+    <section id="contactus">
+        <ul>
+            <li>
+                <i class="fa fa-whatsapp" style="font-size:30px" class="logo"></i>
+            </li>
+            <li>
+                <i class="fa fa-instagram" style="font-size:30px;" class="logo"></i>
+            </li>
+            <li>
+                <i class="fa fa-envelope" style="font-size:30px;" class="logo"></i>
+            </li>
+            <li>
+                <i class="fa fa-linkedin" style="font-size:30px;" class="logo"></i>
+            </li>
+        </ul>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['VINAY REDDY'],
+          typeSpeed: 100,
+        });
+      </script>
+</body>
+</html>
